@@ -3,6 +3,8 @@ import './App.css';
 
 //COMPONENTS
 import Header from './components/header/header';
+import NavBar from './components/NavBar/navbar';
+import Body from './components/Body/body';
 
 
 class App extends React.Component {
@@ -11,9 +13,10 @@ class App extends React.Component {
     return(
       <div className="App">
         <Header 
-          title='Mi primer titulo en RectJS' 
-          subtitle='Madre mia, soy un span'
+          title='Mi primera entrega en ReactJS' 
         />
+        <NavBar />
+        <Body />
       </div>
     );
   };
