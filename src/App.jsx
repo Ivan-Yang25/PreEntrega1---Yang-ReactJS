@@ -1,25 +1,21 @@
 import React from 'react';
-import './App.css';
 
 //COMPONENTS
 import Header from './components/header/header';
 import NavBar from './components/NavBar/navbar';
 import Body from './components/Body/body';
 
+const App = () => {
 
-class App extends React.Component {
-
-  render() {
-    return(
-      <div className="App">
-        <Header 
-          title='Mi primera entrega en ReactJS' 
-        />
-        <NavBar />
-        <Body />
-      </div>
-    );
-  };
-};
-
+  return(
+    <div className="App">
+      <Header 
+        title='Tienda de cursos de programacion' 
+      />
+      <NavBar />
+      <Body
+      />
+    </div>
+  );
+}
 export default App;
