@@ -1,19 +1,19 @@
-import React from 'react';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {Link} from 'react-router-dom';
 import './navbar.css';
 
 const NavBar = () => {
 
     return (
         <div className='navbar'>
-            <a href="#">Inicio</a>
-            <a href="#">Shopping</a>
-            <a href="#">Comentarios</a>
-            <div>   
-                <ShoppingCartIcon  color="secondary"/>
-                <span>4</span>
-            </div>
-            
+            <Link to="/Category/Human">
+                Humanos
+            </Link>
+            <Link to="/Category/Alien">
+                Alien
+            </Link>
+            <Link to="/">
+                Inicio
+            </Link>
         </div>
     );
 };

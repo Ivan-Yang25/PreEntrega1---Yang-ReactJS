@@ -1,15 +1,15 @@
 import React from 'react';
 import "./card.css";
 
-const Card = (props) => {
+const Card = ({user}) => {
 
     return(
 
         <div className="section__div">
-            <img src={props.img} />
-            <h4>{props.msj}</h4>
-            <span>{props.submsj}</span>
-            <button>Comprar</button>
+            <img src={user.image} />
+            <h4>{user.name}</h4>
+            <span>{user.species}</span>
+            <span>{user.gender}</span>
         </div>
     );
 };
